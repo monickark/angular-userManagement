@@ -1,0 +1,217 @@
+<div class="page-wrapper-row full-height">
+                <div class="page-wrapper-middle">
+                    <!-- BEGIN CONTAINER -->
+                    <div class="page-container">
+                        <!-- BEGIN CONTENT -->
+                        <div class="page-content-wrapper">
+                            <!-- BEGIN CONTENT BODY -->
+                            <!-- BEGIN PAGE HEAD-->
+                            <div class="page-head">
+                                <div class="container">
+                                    <!-- BEGIN PAGE TITLE -->
+                                    <div class="page-title">
+                                        <h1>Receipt</h1>
+                                    </div>
+                                    <!-- END PAGE TITLE -->
+                                    
+                                </div>
+                            </div>
+                            <!-- END PAGE HEAD-->
+							
+							              <div class="page-content-wrapper">
+                            <!-- BEGIN CONTENT BODY -->
+                           
+                            <!-- BEGIN PAGE CONTENT BODY -->
+                            <div class="page-content">
+                                <div class="container">
+                                   
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                    <div class="page-content-inner">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Begin: life time stats -->
+                                                <div class="portlet light portlet-fit portlet-datatable ">
+                                                    <div class="portlet-title">
+														
+														<div class="invoice">
+															<div class="row invoice-logo">
+																<div class="col-xs-6 invoice-logo-space">
+																	<img src="../assets/pages/media/invoice/walmart.png" class="img-responsive" alt="logo" /> 
+																</div>
+																<div class="col-xs-6">
+																	<p> ULA0001 / 06 MAR 2017
+																		
+																	</p>
+																</div>
+															</div>
+                                            
+										                </div>
+													   
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        
+                                                            
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active" id="tab_1">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 col-sm-12">
+                                                                            <div class="portlet green-meadow box">
+                                                                                <div class="portlet-title">
+                                                                                    <div class="caption">
+                                                                                        <i class="fa fa-cogs"></i>Charity Details </div>
+                                                                                </div>
+																				
+                                                                                <div class="portlet-body">
+                                                                                    <div class="row static-info">
+                                                                                        <div class="col-md-12 value">
+                                                                                          {{receiptMasterVO.charityDetailsVO.charityName}}
+                                                                                            <br> {{receiptMasterVO.charityDetailsVO.address1}},
+																							                                              <br> {{receiptMasterVO.charityDetailsVO.address2}}
+                                                                                            <br> {{receiptMasterVO.charityDetailsVO.city}} - {{receiptMasterVO.charityDetailsVO.pincode}}
+                                                                                            <br> {{receiptMasterVO.charityDetailsVO.state}}
+                                                                                            <br> {{receiptMasterVO.charityDetailsVO.country}}
+                                                                                            <br> Mobile Number: {{receiptMasterVO.charityDetailsVO.mobileNo}}
+                                                                                            <br> E-Mail ID: {{receiptMasterVO.charityDetailsVO.emailId}}
+                                                                                            <br> 
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 col-sm-12">
+                                                                            <div class="portlet red-sunglo box">
+                                                                                <div class="portlet-title">
+                                                                                    <div class="caption">
+                                                                                        <i class="fa fa-cogs"></i>Donar Details </div>
+                                                                                </div>
+                                                                                <div class="portlet-body">
+                                                                                    <div class="row static-info">
+                                                                                        <div class="col-md-12 value">
+                                                                                          {{receiptMasterVO.userDetailsVO.name}}        
+                                                                                            <br> {{receiptMasterVO.userDetailsVO.address1}},
+																							                                              <br> {{receiptMasterVO.userDetailsVO.address2}}
+                                                                                            <br> {{receiptMasterVO.userDetailsVO.city}} - {{receiptMasterVO.userDetailsVO.pincode}}
+                                                                                            <br> {{receiptMasterVO.userDetailsVO.state}}
+                                                                                            <br> {{receiptMasterVO.userDetailsVO.country}}
+                                                                                            <br> Mobile Number: {{receiptMasterVO.userDetailsVO.mobileNo}}
+                                                                                            <br> E-Mail ID: {{receiptMasterVO.userDetailsVO.emailId}}
+                                                                                            <br> 
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+																	
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 col-sm-12">
+                                                                            <div class="portlet green-jungle box">
+                                                                                <div class="portlet-title">
+                                                                                    <div class="caption">
+                                                                                        <i class="fa fa-cogs"></i>Reciept
+																					</div>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="portlet-body">
+																					<form class="form-horizontal" role="form" (submit)="receipt()">
+																						<div class="form-body">
+																							
+																								<div class="row">
+																									<div class="col-md-6">
+																										<div class="form-group">
+																											<label class="control-label col-md-4"> <b>Bill No:</b></label>
+																												<div class="col-md-8 ">
+																													<p class="form-control-static "> {{receiptMasterVO.donationDetailsVO.billNo}} </p>
+																												</div>
+																										</div>
+																									</div>
+																									<!--/span-->
+																									<div class="col-md-6">
+																										<div class="form-group">
+																											<label class="control-label col-md-4"><b>Service Name:</b></label>
+																											<div class="col-md-8">
+																												<p class="form-control-static"> {{receiptMasterVO.donationDetailsVO.serviceName}} </p>
+																											</div>
+																										</div>
+																									</div>
+																									<!--/span-->
+																								</div>
+																								<!--/row-->
+																								<div class="row">
+																									<div class="col-md-6">
+																										<div class="form-group">
+																											<label class="control-label col-md-4"><b>Account Type:</b></label>
+																												<div class="col-md-8">
+																													<p class="form-control-static"> {{receiptMasterVO.donationDetailsVO.accountType}} </p>
+																												</div>
+																											</div>
+																									</div>
+																									<div class="col-md-6">
+																										<div class="form-group">
+																											<label class="control-label col-md-4"><b>Amount Donated:</b></label>
+																											<div class="col-md-8">
+																												<p class="form-control-static"> Rs {{receiptMasterVO.donationDetailsVO.donationAmt}} </p>
+																											</div>
+																										</div>
+																									</div>
+																											<!--/span-->
+																								</div>
+																										
+																						</div>
+																					</form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <!-- End: life time stats -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END PAGE CONTENT INNER -->
+                                </div>
+								
+								<div class="page-content">
+                                <div class="container">
+                                    
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                    <div class="page-content-inner">
+                                        <div class="invoice">
+                                            
+                                            
+                                            <div class="row">
+                                                
+                                                <div class="col-sm-12 invoice-block">
+                                                    
+                                                    <br/>
+                                                    <a class="btn btn-lg blue hidden-print margin-bottom-5" onclick="javascript:window.print();"> Print
+                                                        <i class="fa fa-print"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END PAGE CONTENT INNER -->
+                                </div>
+                            </div>
+								
+                            </div>
+                            <!-- END PAGE CONTENT BODY -->
+                            <!-- END CONTENT BODY -->
+                        </div>
+							
+							
+                            <!-- END CONTENT BODY -->
+                        </div>
+                        <!-- END CONTENT -->
+                       
+                    </div>
+                    <!-- END CONTAINER -->
+                </div>
+            </div>

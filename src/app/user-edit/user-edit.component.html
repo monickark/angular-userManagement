@@ -1,0 +1,332 @@
+<div class="page-wrapper-row full-height">
+                <div class="page-wrapper-middle">
+                    <!-- BEGIN CONTAINER -->
+                    <div class="page-container">
+                        <!-- BEGIN CONTENT -->
+                        <div class="page-content-wrapper">
+                            <!-- BEGIN CONTENT BODY -->
+                            <!-- BEGIN PAGE HEAD-->
+                            <div class="page-head">
+                                <div class="container">
+                                    <!-- BEGIN PAGE TITLE -->
+                                    <div class="page-title">
+                                        <h1>Update Profile</h1>
+                                    </div>
+                                    <!-- END PAGE TITLE -->
+                                    
+                                </div>
+                            </div>
+                            <!-- END PAGE HEAD-->
+                            <!-- BEGIN PAGE CONTENT BODY -->
+                            <div class="page-content">
+                                <div class="container">
+                                    
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                    <div class="page-content-inner">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- BEGIN PROFILE SIDEBAR -->
+												<form action="profile_update.html" class="form-horizontal">
+                                                <div class="profile-sidebar">
+                                                    <!-- PORTLET MAIN -->
+                                                    <div class="portlet light profile-sidebar-portlet ">
+                                                        <!-- SIDEBAR USERPIC -->
+                                                        <div class="profile-userpic">
+                                                            <img src="../assets/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> </div>
+                                                        <!-- END SIDEBAR USERPIC -->
+                                                        <!-- SIDEBAR USER TITLE -->
+                                                        <div class="profile-usertitle">
+                                                            <div class="profile-usertitle-name"> {{firstName}} {{lastName}} </div>
+                                                            <div class="profile-usertitle-job"> {{ulaId}} </div>
+                                                        </div>
+                                                        <!-- END SIDEBAR USER TITLE -->
+                                                        
+                                                        <!-- SIDEBAR MENU -->
+                                                        <div class="profile-usermenu">
+                                                            <ul class="nav">
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                        <!-- END MENU -->
+                                                    </div>
+													<div class="portlet light ">
+                                                        <!-- SIDEBAR USERPIC -->
+														<label class="control-label col-md-1"></label>
+														<label class="control-label col-md-10 no-padding">Select Image to upload</label>
+														<div class="portlet-body ">
+														
+															<div class="col-md-1"></div>
+															<div class="col-md-10">
+																<div class="form-group">
+																	<div class="fileinput fileinput-new" data-provides="fileinput">
+																		<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+																			<img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" /> 
+																		</div>
+																		<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
+																		</div>
+																		<div>
+																			<span class="btn default btn-file">
+																				<span class="fileinput-new"> Select Image </span>
+																				<span class="fileinput-exists"> Change </span>
+																				<input type="file" name="photo" [(ngModel)]= "photo"> 
+																			</span>
+																			<a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> Remove </a>
+																		</div>
+																	</div>
+                                                                </div> 
+															</div>
+													
+                                                        <!-- END SIDEBAR USERPIC -->
+                                                        
+                                                        <!-- SIDEBAR MENU -->
+                                                        <div class="profile-usermenu">
+                                                            <ul class="nav">
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                        <!-- END MENU -->
+                                                    </div>
+													</div>
+													
+													
+																				
+													
+                                                    <!-- END PORTLET MAIN -->
+                                                    
+                                                </div>
+                                                <!-- END BEGIN PROFILE SIDEBAR -->
+                                                <!-- BEGIN PROFILE CONTENT -->
+                                                <div class="profile-content">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="portlet light ">
+                                                                <div class="portlet-body">
+                                                                    <div class="tab-content">
+                                                                        <!-- PERSONAL INFO TAB -->
+																		
+																		<div class="tab-pane active" id="tab_1_1">
+                                                                           <div class="portlet-body form">
+																				<!-- BEGIN FORM-->
+																				
+																					<div class="form-body form-no-padding">
+																						<h3 class="form-section">Personal Info</h3>
+																						<div class="error"></div>
+
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">First Name<span class="required">*</span></label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="firstName" name="firstName" placeholder="Chee Kin">
+																										
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Last Name</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="lastName" name="lastName" placeholder="K">
+																										
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																						</div>
+																						<!--/row-->
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Contact Number<span class="required">*</span></label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="mobileNo" name="mobileNo" placeholder="9876541230">
+																										
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">E-Mail ID<span class="required">*</span></label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="emailId" name="emailId" placeholder="example@email.com">
+																										
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																						</div>
+																						<!--/row-->
+																						<div class="row">
+																							
+																							<div class="col-md-6">
+																								<div class="form-group form-md-radios">
+																								<label class="control-label col-md-4">Gender</label>
+																									<div class="col-md-8">
+																										
+																											<div class="md-radio-inline">
+																												<div class="md-radio">
+																												<input type="radio" id="radio1" [(ngModel)]="gender" name="gender" class="md-radiobtn">
+																													<label for="radio1">
+																													<span></span>
+																													<span class="check"></span>
+																													<span class="box"></span> Male </label>
+																												</div>
+																												<div class="md-radio">
+																												<input type="radio" id="radio2" [(ngModel)]="gender" name="gender" class="md-radiobtn">
+																													<label for="radio2">
+																													<span></span>
+																													<span class="check"></span>
+																													<span class="box"></span> Female </label>
+																												</div>
+																												
+																											</div>
+																											
+																										
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																								<label class="control-label col-md-4">Date of Birth</label>
+																									<div class="col-md-8">
+																											
+																										<input class="form-control form-control-inline input-medium date-picker" 
+																										data-date-format="dd-mm-yyyy" data-date-end-date="+0d" placeholder="dd-mm-yyyy" 
+																										size="16" type="text" class="form-control" [(ngModel)]="dateOfBirth" name="dateOfBirth"/>
+																										
+																									</div>
+																								</div>
+																							</div>	
+																							
+																							
+																						</div>
+																						<!--/row-->
+																						
+																						<h3 class="form-section">Address</h3>
+																						<!--/row-->
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Address Line 1</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="address1" name="address1"> </div>
+																								</div>
+																							</div>
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Address Line 2</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="address2" name="address2"> </div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">City</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="city" name="city"> </div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">State</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="state" name="state"> </div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																						</div>
+																						<!--/row-->
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Country</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="country" name="country"> </div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Pincode</label>
+																									<div class="col-md-8">
+																										<input type="text" class="form-control" [(ngModel)]="pincode" name="pincode"> </div>
+																								</div>
+																								
+																							</div>
+																							<!--/span-->
+																						</div>
+																						<!--/row-->
+																					</div>
+																					
+																					<div class="form-actions">
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="row">
+																									<div class="col-md-offset-4 col-md-8">
+																										
+																										<button type="reset" class="btn default">Reset</button>
+																							
+																										<button type="submit" class="btn btn-success">Submit</button>
+																										
+																										
+																									</div>
+																								</div>
+																							</div>
+																							<div class="col-md-6"> </div>
+																						</div>
+																					</div>
+																				
+																				<!-- END FORM-->
+																				
+																				<div class="modal fade draggable-modal" id="draggable" tabindex="-1" role="basic" aria-hidden="true">
+																					<div class="modal-dialog">
+																						<div class="modal-content">
+																							<div class="modal-header">
+																								
+																								<h4 class="modal-title"> Profile Updated Successfully</h4>
+																							</div>
+																							<div class="modal-body"> Thank You 
+																								
+																							</div>
+																							
+																						</div>
+																						<!-- /.modal-content -->
+																					</div>
+																					<!-- /.modal-dialog -->
+																				</div>
+																				
+																			</div>
+                                                                            
+                                                                        </div>
+																		
+                                                                        <!-- END PERSONAL INFO TAB -->
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												</form>
+                                                <!-- END PROFILE CONTENT -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END PAGE CONTENT INNER -->
+                                </div>
+                            </div>
+                            <!-- END PAGE CONTENT BODY -->
+                            <!-- END CONTENT BODY -->
+                        </div>
+                        <!-- END CONTENT -->
+                        
+                    </div>
+                    <!-- END CONTAINER -->
+                </div>
+            </div>

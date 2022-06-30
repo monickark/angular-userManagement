@@ -1,0 +1,59 @@
+<!-- BEGIN HEADER TOP -->
+<div class="page-header-top">
+    <div class="container">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a routerLink="/about">
+            <img src="../assets/layouts/layout3/img/logo-default.png" alt="logo" class="logo-default">
+        </a>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler"></a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN TOP NAVIGATION MENU -->
+
+        <div class="top-menu">
+
+            <ul class="nav navbar-nav pull-right ">
+                <app-login></app-login>
+            </ul>
+
+            <ul class="nav navbar-nav pull-right ">
+
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+                <li class="dropdown dropdown-user dropdown-dark">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <img alt="" class="img-circle" src="../assets/pages/media/profile/profile_user.jpg">
+                        <span class="username username-hide-mobile">User Name</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-default">
+                        <li>
+                            <a routerLink="/view-profile">
+                            <i class="icon-user"></i> View Profile </a>
+                        </li>
+                        <li>
+                            <a routerLink="/edit-profile">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile </a>
+                        </li>
+                        <li>
+                            <a routerLink="/change-password">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i> Change Password
+                            </a>
+                        </li>
+
+                        <li class="divider"> </li>
+
+                        <li>
+                            <a routerLink="/logout">
+                            <i class="fa fa-reply"></i> Log Out </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END USER LOGIN DROPDOWN -->
+            </ul>
+        </div>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+</div>
+<!-- END HEADER TOP -->

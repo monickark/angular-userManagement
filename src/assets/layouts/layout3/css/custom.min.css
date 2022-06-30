@@ -1,0 +1,211 @@
+/* here you can put your own css to customize and override the theme */
+
+
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown{margin:0;padding:0 4px;display:inline-block}
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu> li{background: #fff;padding: 10px 10px 5px 10px !important;}
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu> li>a{display: inline-block;}
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu> li>a:hover{background-color:#272c33!important;}
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu{background: #272c33;min-width:240px!important;}
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu:after{border-bottom-color: #fff;}
+.dropdown-menu> li:hover>a{background-color:#272c33!important;}
+.top-menu>ul>li>a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.form .form-no-padding {
+	padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu> li>ul{
+    list-style-type: none !important;
+	padding-left: 0px !important;
+}
+
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .dropdown-menu> li>ul>li>a{
+    padding-left: 12px !important;
+}
+
+.page-header .page-header-top .top-menu .navbar-nav>li>.dropdown .login-box>li:not(:first-child){
+    padding-top: 5px !important;
+}
+
+.invoice_detail{padding-top:5px;padding-bottom:5px;}
+
+/* @media (min-width:768px){.lead{font-size:21px}}.small,small{font-size:85%} */
+
+@media ( max-width :768px) {
+	h1.quotes {
+		font-size :30px!important;
+		
+	}
+	h2.quotes {
+		font-size :12px!important;
+		
+	}
+	.logo-default {
+		width :250px!important;
+		height:58px!important;
+		
+	}
+	.abt-btn{
+		/* width :250px!important;
+		height:58px!important; */
+	
+	}
+	
+}
+@media ( min-width :992px){
+	.donate{
+    margin-left:100px!important;
+	}
+	
+	h3.service_1>b>li{
+		font-size: 30px!important;
+		font-weight: 200!important;
+	}
+	h3.service_2>b>li{
+			font-size: 30px!important;
+			font-weight: 200!important;
+	}
+	h3.service_3>b>li{
+			font-size: 30px!important;
+			font-weight: 200!important;
+	}
+	h3.service_4>b>li{
+			font-size: 30px!important;
+			font-weight: 200!important;
+	}
+	h3.service_5>b>li{
+			font-size: 30px!important;
+			font-weight: 200!important;
+	}
+	h3.service_6>b>li{
+			font-size: 30px!important;
+			font-weight: 200!important;
+	}
+	h3.service_7>b>li{
+			font-size: 30px!important;
+			font-weight: 200!important;
+
+	}
+	h1.topic{
+		font-size: 36px!important;
+		font-weight: 300!important;
+	}
+	h1.ula-topic{
+		font-size: 36px!important;
+		font-weight: 300!important;
+	}
+}
+@media ( max-width :992px){
+	.donate{
+    margin-left:0px!important;
+	}
+	h3.service_1>b>li{
+		font-size: 20px!important;
+		font-weight: 600!important;
+	}
+	h3.service_2>b>li{
+			font-size: 20px!important;
+			font-weight: 600!important;
+	}
+	h3.service_3>b>li{
+			font-size: 20px!important;
+			font-weight: 600!important;
+	}
+	h3.service_4>b>li{
+			font-size: 20px!important;
+			font-weight: 600!important;
+	}
+	h3.service_5>b>li{
+			font-size: 20px!important;
+			font-weight: 600!important;
+	}
+	h3.service_6>b>li{
+			font-size: 20px!important;
+			font-weight: 600!important;
+	}
+	h3.service_7>b>li{
+			font-size: 20px!important;
+			font-weight: 600!important;
+
+	}
+	h1.topic{
+		font-size: 23px!important;
+		font-weight: 400!important;
+	}
+	h1.ula-topic{
+		font-size: 23px!important;
+		font-weight: 400!important;
+	}
+}
+
+	
+/* Services */
+h1.topic{
+	text-align:left!important;
+}
+h3.service_1>b>li{
+		color :#0054bd!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.service_2>b>li{
+		color :#c31400!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.service_3>b>li{
+		color :#bb8400!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.service_4>b>li{
+		color :#00bd7f!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.service_5>b>li{
+		color :#0400bd!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.service_6>b>li{
+		color :#885b2b!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.service_7>b>li{
+		color :#8E44AD!important;
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+}
+h3.join{
+	color:#143E7A!important;
+	text-align:center!important;
+}
+
+.donate{
+	text-align:center!important;
+	margin-top: 20px!important;
+
+}
+/* .page-footer{
+	width: 1349px!important;
+} */
+
+.login-register{
+	
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+
+}
+
+.forgot{
+	
+    padding-left: 12px;
+
+}

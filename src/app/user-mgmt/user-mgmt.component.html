@@ -1,0 +1,144 @@
+<div class="page-wrapper-row full-height">
+                <div class="page-wrapper-middle">
+                    <!-- BEGIN CONTAINER -->
+                    <div class="page-container">
+                        <!-- BEGIN CONTENT -->
+                        <div class="page-content-wrapper">
+                            <!-- BEGIN CONTENT BODY -->
+                            <!-- BEGIN PAGE HEAD-->
+                            <div class="page-head">
+                                <div class="container">
+                                    <!-- BEGIN PAGE TITLE -->
+                                    <div class="page-title">
+                                        <h1>Manage Users</h1>
+                                    </div>
+                                    <!-- END PAGE TITLE -->
+                                    
+                                </div>
+                            </div>
+                            <!-- END PAGE HEAD-->
+                            <!-- BEGIN PAGE CONTENT BODY -->
+                            <div class="page-content">
+                                <div class="container">
+                                    
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                    <div class="page-content-inner">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="tabbable-line boxless tabbable-reversed">
+                                                    
+                                                        <div class="tab-pane" id="tab_3">
+                                                            
+                                                            
+															<div class="row">
+																		<div class="col-md-12">
+																			<!-- BEGIN EXAMPLE TABLE PORTLET-->
+																			<div class="portlet light ">
+																				<div class="portlet-title">
+																					<div class="caption font-dark">
+																						<span class="caption-subject bold uppercase">Manage Users</span>
+																					</div>
+																					
+																				</div>
+																				<div class="portlet-body">
+																					<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" id="sample_1">
+																						<thead>
+																							<tr>
+																								<th class="all">ULA ID</th>
+																								<th class="all">Name</th>
+																								<th class="min-phone-l">E-Mail ID</th>
+																								<th class="min-tablet">Phone Number</th>
+																								<th class="none">City</th>
+																								<th class="none">Gender</th>
+																								<th class="none">DOB</th>
+																								<th class="all">Actions</th>
+																							</tr>
+																						</thead>
+																						
+																						<tbody>
+																						<tr *ngFor= "let userDetailsListVO of userDetailsListVOs">
+																							<td>{{userDetailsListVO.ulaId}}</td>
+																							<td>{{userDetailsListVO.userName}}</td>
+																							<td>{{userDetailsListVO.emailId}}</td>
+																							<td>{{userDetailsListVO.mobileNo}}</td>
+																							<td>{{userDetailsListVO.city}}</td>
+																							<td>{{userDetailsListVO.gender}}</td>
+																							<td>{{userDetailsListVO.dateOfBirth}}</td>
+																							<td>
+																								<div class="btn-group pull-right">
+																									<button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+																										<i class="fa fa-angle-down"></i>
+																									</button>
+																									<ul class="dropdown-menu pull-right">
+																										<li>
+																											<a routerLink="/edit-profile">
+																												<i class="fa fa-pencil"></i> Edit </a>
+																										</li>
+																										<li>
+																											<a routerLink="/view-profile">
+																												<i class="fa fa-eye"></i> View </a>
+																										</li>
+																										<li>
+																											<a routerLink="/delete-profile">
+																												<i class="fa fa-trash"></i> Delete </a>
+																										</li>
+																									</ul>
+																								</div>
+																							</td>
+																						</tr>		
+																						<tr>
+																							<td>ULA0001</td>
+																							<td>Raj</td>
+																							<td>example@email.com</td>
+																							<td>8745612370</td>
+																							<td>Chennai</td>
+																							<td>Male</td>
+																							<td>17-08-2017</td>
+																							
+																							<td>
+																								<div class="btn-group pull-right">
+																									<button class="btn green btn-xs btn-outline dropdown-toggle" data-toggle="dropdown">Tools
+																										<i class="fa fa-angle-down"></i>
+																									</button>
+																									<ul class="dropdown-menu pull-right">
+																										<li>
+																											<a routerLink="/edit-profile">
+																												<i class="fa fa-pencil"></i> Edit </a>
+																										</li>
+																										<li>
+																											<a routerLink="/view-profile">
+																												<i class="fa fa-eye"></i> View </a>
+																										</li>
+																										<li>
+																											<a routerLink="/delete-profile">
+																												<i class="fa fa-trash"></i> Delete </a>
+																										</li>
+																									</ul>
+																								</div>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																				</div>
+																			</div>
+																			<!-- END EXAMPLE TABLE PORTLET-->
+																		</div>			
+															</div>    
+                                                        </div>
+														
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END PAGE CONTENT INNER -->
+                            </div>
+                        </div>
+                        <!-- END PAGE CONTENT BODY -->
+						<!-- END CONTENT BODY -->
+                    </div>
+                    <!-- END CONTENT -->
+                        
+                </div>
+            <!-- END CONTAINER -->
+            </div>

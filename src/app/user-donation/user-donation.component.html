@@ -1,0 +1,206 @@
+<div class="page-wrapper-row full-height">
+                <div class="page-wrapper-middle">
+                    <!-- BEGIN CONTAINER -->
+                    <div class="page-container">
+                        <!-- BEGIN CONTENT -->
+                        <div class="page-content-wrapper">
+                            <!-- BEGIN CONTENT BODY -->
+                            <!-- BEGIN PAGE HEAD-->
+                            <div class="page-head">
+                                <div class="container">
+                                    <!-- BEGIN PAGE TITLE -->
+                                    <div class="page-title">
+                                        <h1>Donation Details</h1>
+                                    </div>
+                                    <!-- END PAGE TITLE -->
+                                    
+                                </div>
+                            </div>
+                            <!-- END PAGE HEAD-->
+                            <!-- BEGIN PAGE CONTENT BODY -->
+                            <div class="page-content">
+                                <div class="container">
+                                    
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                    <div class="page-content-inner">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="tabbable-line boxless tabbable-reversed">
+                                                    <ul class="nav nav-tabs">
+                                                       
+                                                    </ul>
+                                                    
+                                                        <div class="tab-pane" id="tab_3">
+															<div class="portlet box green-jungle">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption">
+                                                                        <i class="fa fa-search-plus"></i>Search
+																	</div>
+                                                                    <div class="tools">
+                                                                        <a href="javascript:;" class="collapse"> </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="portlet-body form">
+                                                                    <!-- BEGIN FORM-->
+                                                                    <form (submit)="viewdonations()" class="form-horizontal">
+                                                                        
+																		<div class="form-body">
+                                                                            <h3 class="form-section">Search By Period</h3>
+																			<div class="row">
+																			
+																				<div class="col-md-6">
+																					<div class="form-group">
+																					<label class="control-label col-md-4">Start Date</label>
+																						<div class="col-md-6">
+																							<input class="form-control form-control-inline input-medium date-picker" [(ngModel)]="fromDate" name="fromDate"
+                                              data-date-format="dd-mm-yyyy" data-date-end-date="+0d" type="text" class="form-control" placeholder="dd-mm-yyyy"/>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<div class="form-group">
+																					<label class="control-label col-md-4">End Date</label>
+																						<div class="col-md-6">
+																							<input class="form-control form-control-inline input-medium date-picker" [(ngModel)]="toDate" name="toDate"
+                                              data-date-format="dd-mm-yyyy" data-date-end-date="+0d" placeholder="dd-mm-yyyy" size="16" type="text" class="form-control" />
+																						</div>
+																					</div>
+																				</div>
+																				
+                                                                                <!--/span-->
+                                                                            </div>
+																			<div class="row">
+                                                                                
+                                                                                <div class="col-md-12">
+																					
+                                                                                    <div class="form-group form-md-radios">
+                                                                                        <label class="control-label col-md-2">Date Range</label>
+																						<div class="col-md-10">
+																								
+																								<div class="md-radio-inline">
+																									<div class="md-radio">
+																										<input type="radio" id="radio1" [(ngModel)]="dateRange" name="dateRange" class="md-radiobtn">
+																										<label for="radio1">
+																											<span></span>
+																											<span class="check"></span>
+																											<span class="box"></span> Last 1 Year </label>
+																									</div>
+																									<div class="md-radio">
+																										<input type="radio" id="radio2" [(ngModel)]="dateRange" name="dateRange" class="md-radiobtn" >
+																										<label for="radio2">
+																											<span></span>
+																											<span class="check"></span>
+																											<span class="box"></span> Last 6 Months </label>
+																									</div>
+																									<div class="md-radio">
+																										<input type="radio" id="radio3" [(ngModel)]="dateRange" name="dateRange" class="md-radiobtn" checked>
+																										<label for="radio3">
+																											<span></span>
+																											<span class="check"></span>
+																											<span class="box"></span> Current Month</label>
+																									</div>
+																									<div class="md-radio">
+																										<input type="radio" id="radio4" [(ngModel)]="dateRange" name="dateRange" class="md-radiobtn" >
+																										<label for="radio4">
+																											<span></span>
+																											<span class="check"></span>
+																											<span class="box"></span> Today</label>
+																									</div>
+																								</div>
+																								
+																							
+																						</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--/span-->
+																				
+                                                                            </div>
+																			<h3 class="form-section">Search By Users</h3>
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="form-group">
+																						<label class="control-label col-md-4">ULA ID / Name</label>
+																							<div class="col-md-6">
+																								<input type="text" class="form-control" [(ngModel)]="userDetail" name="userDetail" 
+                                                placeholder="ULA ID / Name">
+																										
+																							</div>
+																					</div>
+																				</div>
+																			</div>
+                                                                        </div>
+																		
+																		<div class="form-actions">
+                                                                            <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-offset-3 col-md-9">
+                                                                                            
+																							<button type="submit" class="btn green">Search</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+																		
+																	</form>
+                                                                </div>
+                                                            </div>
+                                                            
+															<div class="row">
+																		<div class="col-md-12">
+																			<!-- BEGIN EXAMPLE TABLE PORTLET-->
+																			<div class="portlet light ">
+																				<div class="portlet-title">
+																					<div class="caption font-dark">
+																						<span class="caption-subject bold uppercase">Result</span>
+																					</div>
+																					
+																				</div>
+																				<div class="portlet-body">
+																					<table class="table table-striped table-bordered table-hover dt-responsive" width="100%" id="sample_1">
+																						<thead>
+																							<tr>
+																								<th class="min-phone-l">User</th>
+																								<th class="min-tablet">Date</th>
+																								<th class="all">Amount</th>
+																								<th class="min-tablet">Particulars</th>
+																								
+																							</tr>
+																						</thead>
+																						<tbody>
+																						<tr>
+																						
+																							<td class="fit">
+																								<img class="user-pic rounded" src="../assets/pages/media/users/avatar4.jpg"> 
+																								<a href="javascript:;" class="primary-link">Brain</a>
+																							</td>
+																							<td>04-05-2017</td>
+																							<td>1000/-</td>
+																							<td>For Nikithra</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																				</div>
+																			</div>
+																			<!-- END EXAMPLE TABLE PORTLET-->
+																		</div>			
+															</div>    
+                                                        </div>
+														
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END PAGE CONTENT INNER -->
+                            </div>
+                        </div>
+                        <!-- END PAGE CONTENT BODY -->
+						<!-- END CONTENT BODY -->
+                    </div>
+                    <!-- END CONTENT -->
+                        
+                </div>
+            <!-- END CONTAINER -->
+            </div>

@@ -1,0 +1,29 @@
+<li class="dropdown">
+    <div class="btn-group dropdown dropdown-extended dropdown-notification dropdown-dark">
+
+        <button type="button" class="btn btn-circle dropdown-toggle " data-toggle="dropdown">
+                    Login</button>
+
+        <ul class="dropdown-menu login-box pull-right">
+            <li>
+                <input class="form-control" placeholder="User Name" type="text" [(ngModel)]="userId" name="userId" />
+            </li>
+            <li>
+                <input class="form-control" placeholder="Password" type="text" [(ngModel)]="passWord" name="passWord" />
+            </li>
+
+            <li>
+                <ul>
+                    <li>
+                        <button (click)="loginUser()" class="btn btn-success"> Login <i class="icon-login"></i></button>
+                        <a routerLink="/forgot-password">Forgot Password</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</li>
+
+<li class="dropdown">
+    <a routerLink="/signup" class="btn btn-circle btn-default">Register</a>
+</li>

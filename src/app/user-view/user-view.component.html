@@ -1,0 +1,213 @@
+<div class="page-wrapper-row full-height">
+                <div class="page-wrapper-middle">
+                    <!-- BEGIN CONTAINER -->
+                    <div class="page-container">
+                        <!-- BEGIN CONTENT -->
+                        <div class="page-content-wrapper">
+                            <!-- BEGIN CONTENT BODY -->
+                            <!-- BEGIN PAGE HEAD-->
+                            <div class="page-head">
+                                <div class="container">
+                                    <!-- BEGIN PAGE TITLE -->
+                                    <div class="page-title">
+                                        <h1>View Profile </h1>
+                                    </div>
+                                    <!-- END PAGE TITLE -->
+                                    
+                                </div>
+                            </div>
+                            <!-- END PAGE HEAD-->
+                            <!-- BEGIN PAGE CONTENT BODY -->
+                            <div class="page-content">
+                                <div class="container">
+                                    
+                                    <!-- BEGIN PAGE CONTENT INNER -->
+                                    <div class="page-content-inner">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- BEGIN PROFILE SIDEBAR -->
+												<form action="profile_view.html" class="form-horizontal">
+                                                <div class="profile-sidebar">
+                                                    <!-- PORTLET MAIN -->
+                                                    <div class="portlet light profile-sidebar-portlet ">
+                                                        <!-- SIDEBAR USERPIC -->
+                                                        <div class="profile-userpic">
+                                                            <img src="../assets/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> </div>
+                                                        <!-- END SIDEBAR USERPIC -->
+                                                        <!-- SIDEBAR USER TITLE -->
+                                                        <div class="profile-usertitle">
+                                                            <div class="profile-usertitle-name"> {{firstName}} {{lastName}} </div>
+                                                            <div class="profile-usertitle-job"> {{ulaId}} </div>
+                                                        </div>
+                                                        <!-- END SIDEBAR USER TITLE -->
+                                                        
+                                                        <!-- SIDEBAR MENU -->
+                                                        <div class="profile-usermenu">
+                                                            <ul class="nav">
+                                                                
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                        <!-- END MENU -->
+                                                    </div>
+                                                    <!-- END PORTLET MAIN -->
+                                                    <!-- PORTLET MAIN -->
+                                                    <div class="portlet light ">
+                                                        
+                                                        <div>
+                                                            <h4 class="profile-desc-title">About {{firstName}} {{lastName}}</h4>
+                                                            <!-- <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span> -->
+															<div class="margin-top-20 profile-desc-link">
+                                                                
+																<i class="fa fa-plus-square" aria-hidden="true"></i>{{gender}}
+                                                                
+                                                            </div>
+															<div class="margin-top-20 profile-desc-link">
+                                                                
+																<i class="fa fa-calendar" aria-hidden="true"></i>{{dateOfBirth}}
+                                                                
+                                                            </div>
+                                                            <div class="margin-top-20 profile-desc-link">
+                                                                
+																<i class="fa fa-phone"></i>{{mobileNo}}
+                                                                
+                                                            </div>
+                                                            <div class="margin-top-20 profile-desc-link">
+                                                                <i class="fa fa-envelope" ></i>
+                                                                <a href="mailto:{{emailId}}">{{emailId}}</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END PORTLET MAIN -->
+                                                </div>
+                                                <!-- END BEGIN PROFILE SIDEBAR -->
+                                                <!-- BEGIN PROFILE CONTENT -->
+                                                <div class="profile-content">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="portlet light ">
+                                                                
+                                                                <div class="portlet-body">
+                                                                    <div class="tab-content">
+                                                                        <!-- PERSONAL INFO TAB -->
+																		
+																		<div class="tab-pane active" id="tab_1_1">
+                                                                           <div class="portlet-body form">
+																				<!-- BEGIN FORM-->
+																					
+																					<div class="form-body form-no-padding">
+																						<h3 class="form-section">Communication Info</h3>
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Address Line 1:</label>
+																									<div class="col-md-8">
+																										<p class="form-control-static"> {{address1}} </p>
+																									</div>
+																								</div>
+																								
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Address Line 2:</label>
+																									<div class="col-md-8">
+																										<p class="form-control-static"> {{address2}} </p>
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																						</div>
+																						<!--/row-->
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">City:</label>
+																									<div class="col-md-8">
+																										<p class="form-control-static"> {{city}} </p>
+																									</div>
+																								</div>
+																								
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">State:</label>
+																									<div class="col-md-8">
+																										<p class="form-control-static"> {{state}} </p>
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																						</div>
+																						<!--/row-->
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Country:</label>
+																									<div class="col-md-8">
+																										<p class="form-control-static"> {{country}} </p>
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																							<div class="col-md-6">
+																								<div class="form-group">
+																									<label class="control-label col-md-4">Pincode:</label>
+																									<div class="col-md-8">
+																										<p class="form-control-static"> {{pincode}} </p>
+																									</div>
+																								</div>
+																							</div>
+																							<!--/span-->
+																						</div>
+																						
+																						<!--/row-->
+																					</div>
+																					
+																					<div class="form-actions">
+																						<div class="row">
+																							<div class="col-md-6">
+																								<div class="row">
+																									<div class="col-md-offset-4 col-md-8">
+                                                                                            
+																										<a routerLink="/dashboard" class="btn default">Cancel</a>
+																										<a href="profile_update.html"class="btn green">Edit</a>
+																							
+																									</div>
+																								</div>
+																							</div>
+																							<div class="col-md-6"> </div>
+																						</div>
+																					</div>
+																				<!-- END FORM-->
+																				
+																				
+																			</div>
+                                                                            
+                                                                        </div>
+																		
+                                                                        <!-- END PERSONAL INFO TAB -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												</form>
+                                                <!-- END PROFILE CONTENT -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END PAGE CONTENT INNER -->
+                                </div>
+                            </div>
+                            <!-- END PAGE CONTENT BODY -->
+                            <!-- END CONTENT BODY -->
+                        </div>
+                        <!-- END CONTENT -->
+                        
+                    </div>
+                    <!-- END CONTAINER -->
+                </div>
+            </div>
